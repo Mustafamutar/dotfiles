@@ -1,0 +1,63 @@
+{
+    "modules-left": ["custom/launch", "sway/workspaces"],
+    "modules-right": [
+	"sway/language",
+        "network",
+      	"cpu",
+        "clock",
+        "custom/off"
+    ],
+    "custom/launch": {
+        "format": " ",
+        "on-click": "exec $HOME/.config/rofi/launchers/text/launcher.sh"
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": " {icon} ",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": []
+        },
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "6": " ",
+            "urgent": " ",
+            "focused": " ",
+            "default": " "
+        }
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{usage}% ",
+        "on-click": "st -e btop",
+	      "max-length": 10
+    },
+    "sway/language": {
+        "format": "{}",
+    },
+    "network": {
+        "format-wifi": "直  {essid}",
+        "format-ethernet": "直  {ifname}: {ipaddr}/{cidr}",
+        "format-linked": "直  {ifname} (No IP)",
+        "format-disconnected": "睊  Disconnected",
+        "format-alt": "直  {ifname}: {ipaddr}/{cidr}"
+    },
+    "clock": {
+        "interval": 1,
+        "format": "  {:%I:%M %p}",
+        "format-alt": "  {:%b %d, %G}"
+    },
+    "custom/off": {
+        "format": " ",
+        "on-click": "swaymsg exit"
+    }
+}
