@@ -1,0 +1,354 @@
+/** Global *******************************************/
+*{
+	all: unset;
+	font-family: feather;
+	font-family: Iosevka;
+}
+
+/** Generic window ***********************************/
+.genwin {
+	background-color: #1d2021;
+}
+
+/** Profile ******************************************/
+.face {
+	background-size: 142px;
+	min-height: 142px;
+	min-width: 142px;
+	margin: 45px 0px 0px 0px;
+	border-radius: 100%;
+}
+
+.fullname {
+	color: #cc241d;
+	font-size : 21px;
+	font-weight : bold;
+}
+
+.profiletext {
+	color: #076678;
+	font-size : 16px;
+	font-weight : bold;
+	margin : -10px 0px 0px 0px;
+}
+
+/** System ********************************************/
+.iconcpu, .iconmem, .iconvol, .iconmicvol {
+	font-size : 22px;
+	font-weight : normal;
+}
+.iconcpu {
+	color: #fb4934;
+}
+.iconmem {
+	color: #b8bb26;
+}
+.iconvol {
+	color: #fabd2f;
+}
+.iconmicvol {
+	color: #076678;
+}
+
+.cpu_bar, .mem_bar, .vol_bar, .micvol_bar, scale trough {
+	all: unset;
+	background-color: #282828;
+	border-radius: 3px;
+	min-height: 20px;
+	min-width: 170px;
+}
+
+.cpu_bar, .mem_bar, .vol_bar, .micvol_bar, scale trough highlight {
+	all: unset;
+	border-radius: 3px;
+}
+
+.cpu_bar scale trough highlight {
+	background-color: #fb4934;
+}
+.mem_bar scale trough highlight {
+	background-color: #b8bb26;
+}
+.vol_bar scale trough highlight {
+	background-color: #fabd2f;
+}
+.micvol_bar scale trough highlight {
+	background-color: #076678;
+}
+
+/** Clock ********************************************/
+.time_hour, .time_min {
+	color: #458588;
+	font-size : 50px;
+	font-weight : bold;
+}
+.time_hour {
+	margin : 14px 0px 0px 18px;
+}
+.time_min {
+	margin : 0px 0px 7px 0px;
+}
+
+.time_mer {
+	color: #b8bb26;
+	font-size :28px;
+	font-weight : bold;
+	margin : 14px 0px 0px 0px;
+}
+
+.time_day {
+	color: #fabd2f;
+	font-size : 21px;
+	font-weight : normal;
+	margin : 0px 0px 0px 18px;
+}
+
+/** Uptime ********************************************/
+.icontimer {
+	color: #b16286;
+	font-size : 65px;
+	font-weight : normal;
+}
+
+.uphour {
+	color: #f9f5d7;
+	font-size : 30px;
+	font-weight : bold;
+}
+
+.upmin {
+	color: #f9f5d7;
+	font-size : 22px;
+	font-weight : bold;
+}
+
+/** Music ***************************************/
+.album_art {
+	background-size: 170px;
+	min-height: 170px;
+	min-width: 170px;
+	margin: 14px;
+	border-radius: 4px;
+}
+
+.song {
+	color: #6BB2C0;
+	font-size : 18px;
+	font-weight : bold;
+	margin :28px 0px 0px 0px;
+}
+
+.artist {
+	color: #fabd2f;
+	font-size : 12px;
+	font-weight : normal;
+	margin : 0px 0px 10px 0px;
+}
+
+.btn_prev, .btn_play, .btn_next {
+	font-family:  Iosevka Nerd Font;
+}
+.btn_prev {
+	color: #fabd2f;
+	font-size : 22px;
+	font-weight : normal;
+}
+.btn_play {
+	color: #b8bb26;
+	font-size : 34px;
+	font-weight : bold;
+}
+.btn_next {
+	color: #fabd2f;
+	font-size : 22px;
+	font-weight : normal;
+}
+
+.music_bar scale trough highlight {
+	all: unset;
+	background-color: #b16286;
+	border-radius: 2px;
+}
+.music_bar scale trough {
+	all: unset;
+	background-color: #282828;
+	border-radius: 2px;
+	min-height: 14px;
+	min-width: 220px-1;
+	margin : 7px 0px 0px 0px;
+}
+
+/** Weather ***************************************/
+.iconweather {
+	font-family:  Iosevka Nerd Font;
+	font-size : 85px;
+	font-weight : normal;
+	margin : 10px 0px 0px 21px;
+}
+
+.label_temp {
+	color : #458588;
+	font-size : 55px;
+	font-weight : bold;
+	margin : -10px 21px 0px 0px;
+}
+
+.label_stat {
+	color : #fb4934;
+	font-size : 27px;
+	font-weight : bold;
+}
+
+.label_quote {
+	color : #a9b1d6;
+	font-size : 13px;
+	font-weight : normal;
+}
+
+/** Applications ***************************************/
+.appbox {
+	margin : 10px 0px 0px 18px;
+}
+
+.app_edge, .app_telegram, .app_discord, .app_terminal,
+.app_spotify, .app_steam, .app_code, .app_gimp, .app_virt {
+    background-repeat: no-repeat;
+	background-size: 45px;
+	min-height: 45px;
+	min-width: 45px;
+	margin: 6px 6px 0px 6px;
+}
+
+.app_edge {}
+.app_telegram {}
+.app_discord {}
+.app_terminal {}
+.app_spotify {}
+.app_steam {}
+.app_code {}
+.app_gimp {}
+.app_virt {}
+
+/** Links ***************************************/
+.iconweb {
+	color: #ffffff;
+	font-family:  Iosevka Nerd Font;
+	font-size : 50px;
+	font-weight : normal;
+}
+
+.github {
+	background-color: #282828;
+	border-radius: 3px;
+}
+.reddit {
+	background-color: #d65d0e;
+	border-radius: 3px;
+}
+.lor {
+	background-color: #3c3836;
+	border-radius: 3px;
+}
+.youtube {
+	background-color: #cc241d;
+	border-radius: 3px;
+}
+.twitch {
+	background-color: #b16286;
+	border-radius: 3px;
+}
+
+/** Power buttons ***************************************/
+.btn_logout, .btn_sleep, .btn_reboot, .btn_poweroff {
+	font-size : 34px;
+	font-weight : bold;
+}
+
+.btn_logout {
+	color: #fb4934;
+}
+.btn_sleep {
+	color: #b8bb26;
+}
+.btn_reboot {
+	color: #fabd2f;
+}
+.btn_poweroff {
+	color: #076678;
+}
+
+/** Home folders ***************************************/
+.hddbox {
+	background-color: #282828;
+	border-radius: 4px;
+	margin : 10px;
+}
+.hddicon {
+	color: #458588;
+	font-family:  Iosevka Nerd Font;
+	font-size : 50px;
+	font-weight : normal;
+	margin : 18px 14px 18px 28px;
+}
+.hdd_label {
+	color: #f9f5d7;
+	font-size : 34px;
+	font-weight : bold;
+	margin : 0px 0px 0px 10px;
+}
+.fs_sep {
+	color: #1d2021;
+	font-size : 25px;
+	font-weight : bold;
+}
+
+.iconfolder1, .iconfolder2, .iconfolder3, .iconfolder4, .iconfolder5, .iconfolder6  {
+	font-family:  Iosevka Nerd Font;
+	font-size : 22px;
+	font-weight : normal;
+	margin : 0px 0px 0px 50px;
+}
+.iconfolder1 {
+	color: #fb4934;
+}
+.iconfolder2 {
+	color: #b8bb26;
+}
+.iconfolder3 {
+	color: #fabd2f;
+}
+.iconfolder4 {
+	color: #458588;
+}
+.iconfolder5 {
+	color: #b16286;
+}
+.iconfolder6 {
+	color: #076678;
+}
+
+.label_folder1, .label_folder2, .label_folder3, .label_folder4, .label_folder5, .label_folder6  {
+	font-size : 16px;
+	font-weight : normal;
+	margin : 0px 0px 0px 21px;
+}
+.label_folder1 {
+	color: #fb4934;
+}
+.label_folder2 {
+	color: #b8bb26;
+}
+.label_folder3 {
+	color: #fabd2f;
+}
+.label_folder4 {
+	color: #458588;
+}
+.label_folder5 {
+	color: #b16286;
+}
+.label_folder6 {
+	color: #076678;
+}
+
+/** EOF *************************************************/

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+## Open folders in File Manger
+FILE="$HOME/.cache/eww_launch.xyz"
+EWW="$HOME/.local/bin/eww"
+
+if [[ "$1" == "--dl" ]]; then
+	${EWW} close-all && rm -rf "$FILE" && st -e vifm ~/Downloads &
+
+elif [[ "$1" == "--docs" ]]; then
+	${EWW} close-all && rm -rf "$FILE" && st -e vifm ~/Documents &
+
+elif [[ "$1" == "--music" ]]; then
+	${EWW} close-all && rm -rf "$FILE" && st -e vifm ~/Music &
+
+elif [[ "$1" == "--pics" ]]; then
+	${EWW} close-all && rm -rf "$FILE" && st -e vifm ~/Pictures &
+
+elif [[ "$1" == "--cfg" ]]; then
+	${EWW} close-all && rm -rf "$FILE" && st -e vifm ~/.config &
+
+elif [[ "$1" == "--local" ]]; then
+	${EWW} close-all && rm -rf "$FILE" && st -e vifm ~/.local/share &
+
+fi
